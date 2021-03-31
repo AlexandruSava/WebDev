@@ -1,0 +1,124 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    /* border: 1px solid black;*/
+}
+
+li {
+    list-style: none;
+}
+
+/* Images are now responsive */
+ img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Header */
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+/* Header -> Logo */
+.nav-logo {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.logo {
+	width: 180px;
+	height: 60px;
+}
+
+/* Header -> Nav */
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: olive;
+}
+
+.main-nav ul {
+	display: flex;
+	order: 1;
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.main-nav ul li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.main-nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-shadow: 2px 2px black;
+}
+
+/* Header -> Cover Photo with Motto */
+.cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 700px;
+	background-image: url('images/cover.jpg');
+	background-size: cover;
+}
+
+.cover .motto {
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 3em;
+	text-shadow: 5px 5px black;
+	text-align: center;
+}
+
+/* Media Screen Header */
+
+@media screen and (min-width: 550px) {
+	.main-nav ul {
+	  width: 100%;
+	  margin-top: 0;
+	}
+
+	.logo {
+		width: auto;
+	}
+
+	.nav-logo {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 40px;
+	}
+
+	.main-nav {
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+}
+
+/* Main */
+main {
+    margin: 30px auto;
+    padding: 0px 40px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
