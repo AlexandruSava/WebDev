@@ -11,6 +11,10 @@ li {
     list-style: none;
 }
 
+a:hover {
+	opacity: 0.7;
+}
+
 /* Images are now responsive */
  img {
 	max-width: 100%;
@@ -42,7 +46,7 @@ li {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	background-color: goldenrod;
+	background-color: #5f4c4c;
 }
 
 .main-nav ul {
@@ -240,7 +244,7 @@ li {
 /* Footer -> Navbar*/
 .footer-nav {
 	margin-top: 20px;
-	background-color: goldenrod;
+	background-color: #5f4c4c;
 }
 
 .footer-nav ul {
@@ -253,11 +257,11 @@ li {
 	height: 100%;
 	margin-top: 5px;
 	margin-bottom: 20px;
-	background-color: goldenrod;
 }
 
 #copyright {
 	font-size: 0.75em;
+	color: white;
 }
 
 /* Foooter Media Screen */
@@ -281,7 +285,7 @@ li {
 	}
 
 	.main-logo-motto img {
-		width: 80%;
+		width: 60%;
 	}
 
 	.contact-us {
