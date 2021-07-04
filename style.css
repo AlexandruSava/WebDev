@@ -29,6 +29,17 @@ a:hover {
 	height: auto;
 }
 
+/* Make the page to fullfill the entire height space */
+html,
+body {
+    height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Header */
 .main-header {
 	display: flex;
@@ -159,11 +170,46 @@ a:hover {
 .main-offers figure a img {
 	width: 100%;
 	border-radius: 0.3rem;
+	text-decoration: none;
+}
+
+.offer-container {
+	position: relative;
+}
+
+.offer-container-box {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	width: 100%;
+	min-height: 30%;
+	border-radius: 0.3rem;
+	background-color: gainsboro;
+	opacity: 0.8;
+	bottom: 0.85%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.offer-box-column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 50%;
+	margin-left: 15px;
+}
+
+.offer-box-column strong {
+	margin: 5px 5px 5px 5px;
+	color: black;
+	font-size: 1rem;
+	text-shadow: 0.5px 1px var(--main-shadow-color);
+	text-decoration: none;
 }
 
 /* Main Media Screen */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 	.main-offers {
 		display: flex;
 		justify-content: center;
@@ -182,6 +228,10 @@ a:hover {
 		width: 100%;
 		border-radius: 1rem;
 	}
+
+	.offer-container-box {
+		border-radius: 1rem;
+	}
 }
 
 /* Footer */
@@ -192,6 +242,7 @@ a:hover {
 	flex-direction: column;
 	width: 100%;
 	flex-wrap: wrap;
+	margin-top: auto;
 }
 
 /* Footer -> Upper Part*/
