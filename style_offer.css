@@ -506,7 +506,7 @@ button:hover {
 @media screen and (min-width: 1100px) {
 	.up {
 		justify-content: space-around;
-		min-height: 95vh;
+		min-height: 93vh;
 	}
 
 	#button-hidden{
