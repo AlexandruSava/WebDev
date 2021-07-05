@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--main-nav-color: #5f4c4c;
+	--main-nav-color: #2f4a35;
 	--main-shadow-color: darkgrey;
 	--main-text-color-over-pictures: white;
 	--main-shadow-color-over-pictures: black;
@@ -38,6 +38,10 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
+}
+
+.invert-color {
+	filter: invert(1);
 }
 
 /* Header */
@@ -119,6 +123,14 @@ body {
 /* Main */
 
 .main-content {
+	background-image: url("images/cover-offer.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-weight: 600;
+}
+
+.main-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -132,7 +144,7 @@ body {
 	margin: 20px auto;
 	font-size: 2rem;
 	text-transform: uppercase;
-	text-shadow: 0.5px 1px var(--main-shadow-color);
+	text-shadow: 0.5px 1px var(--main-text-color-over-pictures);
 }
 
 .main-content-contact {
@@ -165,7 +177,7 @@ body {
 }
 
 .contact-item a {
-	color: black;
+	color: var(--main-text-color-over-pictures);
 	text-align: center;
 	font-size: 1.2rem;
 	text-shadow: 0.5px 1px var(--main-shadow-color);
@@ -229,7 +241,7 @@ textarea:focus {
 }
 
 .form-group label {
-	color: black;
+	color: var(--main-text-color-over-pictures);
 	font-size: 1.5rem;
 	text-shadow: 0.5px 1px var(--main-shadow-color);
 	text-decoration: none;
@@ -274,7 +286,7 @@ button:hover {
 }
 
 .success {
-  color: green;
+  color: white;
   margin: 1em 0;
   font-size: 1.2em;
 }
@@ -286,6 +298,7 @@ button:hover {
 		align-items: flex-start;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		min-height: 95vh;
 	}
 
 }

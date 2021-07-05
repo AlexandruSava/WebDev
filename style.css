@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--main-nav-color: #5f4c4c;
+	--main-nav-color: #2f4a35;
 	--main-shadow-color: darkgrey;
 	--main-text-color-over-pictures: white;
 	--main-shadow-color-over-pictures: black;
@@ -27,6 +27,10 @@ a:hover {
  img {
 	max-width: 100%;
 	height: auto;
+}
+
+.invert-color {
+	filter: invert(1);
 }
 
 /* Make the page to fullfill the entire height space */

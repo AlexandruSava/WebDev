@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--main-nav-color: #5f4c4c;
+	--main-nav-color: #2f4a35;
 	--main-shadow-color: darkgrey;
 	--main-text-color-over-pictures: white;
 	--main-shadow-color-over-pictures: black;
@@ -39,6 +39,10 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
+}
+
+.invert-color {
+	filter: invert(1);
 }
 
 /* Rotation for icons */
@@ -146,6 +150,14 @@ body {
 	width: 100%;
 }
 
+.up {
+	background-image: url("images/cover-offer.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-weight: 600;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -167,11 +179,15 @@ body {
 }
 
 .line {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 50px;
   width: 100%;
+}
+
+.page-down .line {
+	border-bottom: 3px solid black;
 }
 
 .line strong {
@@ -334,7 +350,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-top: 3px solid black;
+	border-top: 3px solid white;
 	padding-top: 20px;
 	margin-top: 20px;
 	width: 100%;
@@ -350,10 +366,14 @@ body {
 
 .buttons a {
 	text-decoration: none;
-	color: orange;
+	color: white;
 	font-style: italic;
   font-size: 1rem;
   text-shadow: 0.5px 1px var(--main-shadow-color);
+}
+
+.button-back-resort a {
+	color: orange;
 }
 
 .buttons img {
