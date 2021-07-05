@@ -298,7 +298,7 @@ button:hover {
 		align-items: flex-start;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		min-height: 95vh;
+		min-height: 98vh;
 	}
 
 }
